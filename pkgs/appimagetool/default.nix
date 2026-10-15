@@ -35,5 +35,6 @@ appimageTools.wrapType2 rec {
     license = lib.licenses.mit;
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
+    mainProgram = "appimagetool";
   };
 }

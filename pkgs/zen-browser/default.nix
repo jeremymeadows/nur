@@ -44,6 +44,8 @@ appimageTools.wrapType2 rec {
     homepage = "https://zen-browser.app/";
     downloadPage = "https://github.com/zen-browser/desktop/releases/latest/";
     license = lib.licenses.mpl20;
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
+    mainProgram = "zen";
   };
 }
